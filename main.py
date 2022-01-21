@@ -69,7 +69,7 @@ def unknown(update: Update, context: CallbackContext):
 
 
 updater.dispatcher.add_handler(CommandHandler('start', start))
-updater.dispatcher.add_handler(CommandHandler('p', price))
+updater.dispatcher.add_handler(CommandHandler('price', price))
 updater.dispatcher.add_handler(MessageHandler(Filters.text, unknown))
 updater.dispatcher.add_handler(MessageHandler(
 	# Filters out unknown commands
